@@ -1,0 +1,9 @@
+{
+  "expoServerPort": 19000,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": "https://wp-teb.anonymous.cansat.exp.direct",
+  "packagerNgrokUrl": "https://packager.wp-teb.anonymous.cansat.exp.direct",
+  "ngrokPid": 15072,
+  "devToolsPort": 19002
+}
