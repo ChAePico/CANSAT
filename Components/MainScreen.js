@@ -19,7 +19,10 @@ const AppTabNavigator=createMaterialTopTabNavigator({
     style: {
         ...Platform.select({
         android:{
-          backgroundColor:'white',
+            backgroundColor: "white",
+        },
+        ios: {
+            backgroundColor: "white",
         }
       })
     },

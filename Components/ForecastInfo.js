@@ -6,8 +6,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 const API_KEY="5724b0ff86ef805a17a36c9918d5a7c3";
 
 const weatherCases={
-    Rain: "rains",
-    Clear: "md-sunny",
+    Rain: "weather-rainy",
+    Clear: "white-balance-sunny",
     Thunderstorm: "lightning",
     Clouds: "cloud-outline",
     Snow: "snow",
@@ -160,17 +160,17 @@ const styles=StyleSheet.create({
         fontSize: 24,
         backgroundColor: "transparent",
         color: "black",
-        marginTop: 5
+        marginTop: 5,
     },
     title: {
         fontSize: 26,
         backgroundColor: "transparent",
         color: "black",
-        marginBottom: 10,
+        marginBottom: 5,
         fontWeight: "300"
     },
     card: {
-        width: "52%",
+        width: "49%",
         height: 300,
         marginHorizontal: 5,
         borderColor: "black",

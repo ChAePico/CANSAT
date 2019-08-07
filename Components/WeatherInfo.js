@@ -7,7 +7,7 @@ const API_KEY="5724b0ff86ef805a17a36c9918d5a7c3";
 
 const weatherCases={
     Rain: "rains",
-    Clear: "sun",
+    Clear: "white-balance-sunny",
     Thunderstorm: "lightning",
     Clouds: "cloud-outline",
     Snow: "snow",
@@ -37,7 +37,7 @@ export default class WeatherInfo extends Component{
         fetch(
             `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&APPID=${API_KEY}`
         )
-        .then(response => response.json())  
+        .then(response => response.json())
         .then(json => {
             this.setState({
                 temperature: json.main.temp,
@@ -54,7 +54,7 @@ export default class WeatherInfo extends Component{
             <View>
                 <View style={styles.upper}>
                     <Text style={styles.temp}>{Math.ceil(temperature-273.15)}°C</Text>
-                    <Text style={styles.humid}>{Math.ceil(humid)}%</Text>                
+                    <Text style={styles.humid}>{Math.ceil(humid)}%</Text>
                 </View>
                 <View style={styles.lower}>
                     <Text style={styles.title}>{name}</Text>
