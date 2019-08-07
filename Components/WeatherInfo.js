@@ -1,12 +1,11 @@
 import React, {Component} from "react";
 import {View, Image, Text, StyleSheet} from "react-native";
-import {Card, CardItem, Left, Right, Body} from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const API_KEY="5724b0ff86ef805a17a36c9918d5a7c3";
 
 const weatherCases={
-    Rain: "rains",
+    Rain: "weather-rainy",
     Clear: "white-balance-sunny",
     Thunderstorm: "lightning",
     Clouds: "cloud-outline",
